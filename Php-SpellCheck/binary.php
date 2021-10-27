@@ -8,7 +8,7 @@ function binarayDictionaraySearch($item, $dictionary)
   $value = binaraySearch($item, $dictionary);
   $time_end = microtime(true);
 
-  $execution_time = $time_end - $time_start;
+  $execution_time = number_format(($time_end - $time_start), 19);
 
   if ($value != -1) {
 

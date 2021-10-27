@@ -14,7 +14,7 @@ function binarayAlice($item, $array)
     }
   }
   $time_end = microtime(true);
-  $execution_time = $time_end - $time_start;
+  $execution_time = number_format(($time_end - $time_start), 19);
 
   echo "There were " . $spellCount . " missspelt words in Alice in Wonderland, " . $execution_time . " seconds";
 }
