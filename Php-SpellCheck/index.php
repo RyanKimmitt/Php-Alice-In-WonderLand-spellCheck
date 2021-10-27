@@ -11,7 +11,7 @@ function fileToArray($file)
   return preg_split('/\s+/', $textData);
 }
 
-$dictionary = array_map('strtolower', fileToArray("data-files/dictionary.txt"));
+$dictionary = fileToArray("data-files/dictionary.txt");
 $aliceWords = array_map('strtolower', fileToArray("data-files/AliceInWonderLand.txt"));
 
 
